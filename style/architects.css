@@ -53,35 +53,6 @@ main > section {
     font-weight: 700;
 }
 
-/* Some facts related styles */
-.facts-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.fact-card {
-    border: 1px solid #FF900E;
-    width: 240px;
-    height: 240px;
-    border-radius: 8px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.fact-number {
-    font-size: 2.8rem;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-.fact-name {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 10px;
-}
-.fact-description {
-    max-width: 540px;
-}
-
 /* Header styles */
 
 
@@ -127,7 +98,7 @@ main > section {
     width: 100%;
 }
 
-/* Team & Feature Releated Styles */
+/* Team & Quick Feature Releated Styles */
 .teams {
     align-items: center;
 }
@@ -138,13 +109,63 @@ main > section {
     gap: 24px;
 }
 
-.our-features {
+.quick-features {
     margin-left: 130px;
     max-width: 530px;
 }
 
 #quick-list {
     font-weight: 500;
+}
+/* Feature section related styles */
+.features {
+    gap: 140px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding: 24px;
+}
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.feature-card .feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Some facts related styles */
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card {
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-description {
+    max-width: 540px;
 }
 
 /* Sponsors related styles */
@@ -182,7 +203,7 @@ main > section {
         gap: 50px;
     }
     
-    .our-features {
+    .quick-features {
         margin-left: 20px;
     }
 }
@@ -192,13 +213,13 @@ main > section {
     .teams {
         flex-direction: column;
     }
-    .our-features {
+    .quick-features {
         margin-left: 50px auto;
     }
 
     .sponsor-companies, .facts-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
-        justify-items: center;
+        justify-items: cen;
     }
 }
